@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(/font/Norse-Bold.otf) format("opentype");
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+}
+
+#left-side {
+    background-image: url("images/leaf-background.jpg");
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+p {
+    margin-top: auto;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#logo {
+    height: 160px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 40%);
+    font-family: Norse;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+img {
+    height: 140px;
+}
+
+#left-side a:visited, #left-side a:active {
+    color: white;
+}
+
+#right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(37, 37, 37);
+    font-size: 1em;
+}
+
+#top, #bottom, #mid {
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+}
+
+#top, #bottom {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+}
+
+#mid {
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgb(218, 218, 218);
+    z-index: 0;
+}
+
+#top {
+    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-right: 20%;
+}
+
+#mid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20%;
+}
+
+#bottom {
+    padding-top: 30px;
+}
+
+h1:nth-child(2) {
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+#bottom > h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login {
+    color: #596D48;
+}
+
+.login:visited, .login:link, .login:active {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: grab;
+    background-color: #6f8b58;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+label {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #616161;
+}
+
+input:focus {
+    border: 1px solid rgb(58, 146, 228);
+    box-shadow: 0 0 3px 0 rgb(58, 146, 228);
+    outline: none;
+}

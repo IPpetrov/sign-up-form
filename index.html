@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left-side">
+            <div id="logo"><img src="images/odin-logo.png" alt="odin-logo" srcset="">ODIN</div>
+            <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
+        </div>
+        <div id="right-side">
+            <div id="top">
+                <h1>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <em>now</em> to get started.</h1>
+                <h1>You <em>know</em> you want to.</h1>
+            </div>
+            <div id="mid">
+                <h1>Let's do this!</h1>
+                <form action="" method="post">
+                    <fieldset>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">                        
+                    </fieldset>
+                    <fieldset>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">                        
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input type="password" name="conf-password" id="conf-password">                        
+                    </fieldset>
+                </form>
+            </div>
+            <div id="bottom">
+                <button type="submit">Create Account</button>
+                <h1>Already have an account? <a class="login" href="">Log in</a></h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
