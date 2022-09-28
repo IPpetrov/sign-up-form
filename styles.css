@@ -11,29 +11,45 @@
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 100vh;
 }
 
 #main {
     display: flex;
-    height: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1238px) {
+    #left-side {
+        background-size: contain;
+    }
 }
 
 #left-side {
     background-image: url("images/leaf-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    height: 100%;
+
 }
 
-p {
+#left-side > p {
     margin-top: auto;
     font-size: .9rem;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.not-matched {
+    font-size: .8rem;
+    color: rgb(216, 43, 43);
+    height: 10px;
+    width: 100%;
 }
 
 #logo {
@@ -63,6 +79,7 @@ img {
     justify-content: space-evenly;
     color: rgb(37, 37, 37);
     font-size: 1em;
+    height: 100%;
 }
 
 #top, #bottom, #mid {
@@ -77,12 +94,6 @@ img {
     flex-direction: column;
 }
 
-#mid {
-    background-color: white;
-    box-shadow: 0px 3px 5px 0px rgb(218, 218, 218);
-    z-index: 0;
-}
-
 #top {
     padding-bottom: 20px;
     padding-top: 100px;
@@ -94,10 +105,13 @@ img {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
-    height: 1000px;
+    height: 1050px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20%;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgb(218, 218, 218);
+    z-index: 0;
 }
 
 #bottom {
@@ -154,8 +168,8 @@ fieldset {
 }
 
 input {
-    width: 300px;
     height: 30px;
+    max-width: 80%;
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     margin-right: 5px;
@@ -174,5 +188,11 @@ label {
 input:focus {
     border: 1px solid rgb(58, 146, 228);
     box-shadow: 0 0 3px 0 rgb(58, 146, 228);
+    outline: none;
+}
+
+.error {
+    border: 1px solid rgb(228, 58, 58);
+    box-shadow: 0 0 2px 0 rgb(228, 58, 58);
     outline: none;
 }
